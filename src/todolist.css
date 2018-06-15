@@ -1,28 +1,91 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   margin: auto;
+  width: 900px;
+}
+
+.wrap {
+  /* text-align: center; */
+  margin-top: 50px;
+  height: 400px;
   width: 500px;
+  border: 2px solid black;
 }
 
-div {
-
+.input {
+  border: 2px solid red;
+  display: inline-block;
+  float: left;
+  margin-left: 10px;
 }
+
+.output {
+  border: 2px solid green;
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+}
+
+#input {
+  height: 30px;
+  width: 150px;
+  padding: 5px;
+}
+
+div {}
 
 li {
-  height: 20px;
-}
-
-li:nth-of-type(n) {
+  height: 30px;
+  width: 200px;
   color: black;
   background-color: #e3f2fd;
   opacity: 0.9;
+  border-radius: 5px;
+  padding-left: 15px;
 }
 
-li:nth-of-type(2n) {
-  color: black;
+li:nth-child(even) {
   background-color: #fdbcd9;
-  opacity: 0.9;
+}
+
+li:hover {
+  background-color: #ffffcc;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+#addBtn {
+  text-align: center;
+  border-radius: 10px;
+  background-color:  #e3f2fd;
+}
+
+.header {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: red;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* float:center; */
 }
