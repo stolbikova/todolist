@@ -4,47 +4,52 @@
 
 body {
   margin: auto;
-  width: 900px;
+  width: 50%;
 }
 
 .wrap {
   /* text-align: center; */
   margin-top: 50px;
   height: 400px;
-  width: 500px;
+  width: 100%;
   border: 2px solid black;
 }
 
 .input {
-  border: 2px solid red;
+  border: 2px solid black;
   display: inline-block;
   float: left;
   margin-left: 10px;
 }
 
 .output {
-  border: 2px solid green;
+  border: 2px solid black;
   display: inline-block;
   float: right;
   margin-right: 10px;
 }
 
-#input {
+.input_field {
   height: 30px;
   width: 150px;
+  padding: 5px;
+}
+
+.output_field {
+  height: 30px;
+  width: 700px;
   padding: 5px;
 }
 
 div {}
 
 li {
-  height: 30px;
-  width: 200px;
   color: black;
   background-color: #e3f2fd;
   opacity: 0.9;
   border-radius: 5px;
   padding-left: 15px;
+  display: inline-block;
 }
 
 li:nth-child(even) {
@@ -75,8 +80,16 @@ ul li.checked::before {
 
 #addBtn {
   text-align: center;
+  border: 2px solid blue;
   border-radius: 10px;
-  background-color:  #e3f2fd;
+  background-color:  white;
+  color: blue;
+  float: right;
+}
+
+#addBtn:hover {
+  background-color:  blue;
+  color: white;
 }
 
 .header {

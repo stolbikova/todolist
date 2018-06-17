@@ -4,7 +4,7 @@ window.addEventListener("load", function() {
 
   function addItem() {
 
-    let input = document.getElementById('input');
+    let input = document.getElementById('input_field');
     if (input.value === '') {
       alert("You must write something!");
       return;
@@ -13,6 +13,10 @@ window.addEventListener("load", function() {
     let li = document.createElement("li");
     li.appendChild(t);
     ul.appendChild(li);
+
+    li.onclick =  function() {
+      li.classList.add("checked");
+    }
   }
 
   function removeItem() {
